@@ -110,7 +110,7 @@ def scrape(exchange_username, exchange_password, username):
         cursor = conn.cursor()
 
         # Define the directory for storing attachments
-        attachment_dir = "Attachment"  # Replace with the actual path
+        attachment_dir = "Attachments"  # Replace with the actual path
 
         for item in account.inbox.filter(is_read=False):  # You can adjust this filter as needed
             item.is_read = True  # Mark the email as read
